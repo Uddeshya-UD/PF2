@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education</title>
+ <!-- Compiled and minified CSS -->
+
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <link rel="stylesheet" href="css/regcss.css">
+ <link rel="stylesheet" href="css/mycss.css">
+ <style>
+    
+ 
+  
+ 
+ 
+
+
+
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.button'),
+      loader = document.querySelector('.loader'),
+      check = document.querySelector('.check');
+  
+  btn.addEventListener('click', function () {
+    loader.classList.add('active');    
+  });
+ 
+  loader.addEventListener('animationend', function() {
+    check.classList.add('active'); 
+  });
+});
+
+</script>
+
+
+</head>
+
+<body>
+	<div id="loading" center`>
+    <img id="loading-image" src="IMG/Loader.gif" alt="Loading..." center />
+  </div>
+	<div class="video-container">
+		<div class="color-overlay"></div>
+		<video autoplay loop muted id="myvid">
+			<source src="IMG/Space.mp4" type="video/mp4" height="1000">
+		</video>
+	  </div>
+	
+<div class="container .hide-on-small-only">
+
+	<div class="row">
+	
+								<form action="index.html" method="get">
+									<table width="1100px" style=" color: #FFF">
+										<tr>
+											<td>
+												<label style="text-decoration: underline">Education </label>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>HighSchool</p>
+											</td>
+											<td valign="top">
+												<p>76%</p>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>Intermediate</p>
+											</td>
+											<td valign="top">
+												<p>64.3%</p>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>BTech</p>
+											</td>
+											<td valign="top">
+												<p>67.75%</p>
+											</td>
+										</tr>
+										
+										<tr>
+											<td colspan="2" style="text-align:center">
+												<div class="main" center>
+													<button  class="button" onclick="goBack()">Back</button>
+												 </div>
+											</td>
+										</tr>
+									</table>
+								</form>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+      document.getElementById('Container').style.visibility="hidden";
+      document.getElementById('video-container').style.visibility="hidden";
+      document.getElementById('loading').style.visibility="visible";
+      document.getElementById('loading-image').style.visibility="visible";
+      
+       
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         
+        document.getElementById('loading').style.visibility="hidden";
+      document.getElementById('loading-image').style.visibility="hidden";
+         document.getElementById('video-container').style.visibility="visible";
+         document.getElementById('container').style.visibility="visible";
+      },1000);
+  }
+};
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+	  $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(window).bind("load", function() {  
+	$('#movie-area').load('index.html');
+}); 
+  })
+  
+  </script>
+
+</body>
+						
+
+</html>
